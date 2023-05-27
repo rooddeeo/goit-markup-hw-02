@@ -14,7 +14,18 @@ body {
   list-style-type: none;
 }
 
+.logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--basic-color-logo);
+}
+
 :root {
+  --basic-color-logo: #2e2f42;
   --basic-color: #434455;
   --background-body: #ffffff;
   --logo-color-web: #4d5ae5;
@@ -37,16 +48,6 @@ body {
 
 /* -- INDEX STYLE PAGE -- */
 /* -- HEADER -- */
-
-.logo {
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .logo-color {
   color: var(--logo-color-web);
 }
