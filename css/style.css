@@ -40,7 +40,7 @@ body {
 }
 
 .header-menu-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -84,7 +84,7 @@ body {
 }
 
 .heros-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -96,7 +96,7 @@ body {
 
 .heros-button:hover,
 .heros-button:focus {
-  background-color: var(--white-background);
+  background-color: var(--pressed-state);
   color: var(--pressed-state);
 }
 
@@ -177,11 +177,11 @@ body {
 /* -- MAIN -- */
 /* -- SECTION FILTER&RESULT -- */
 .filter-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: var(--primary-drand);
   background-color: var(--light);
   cursor: pointer;
@@ -196,7 +196,7 @@ body {
 .result-sub-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 0.02em;
   color: var(--hero-background);
 }
 
