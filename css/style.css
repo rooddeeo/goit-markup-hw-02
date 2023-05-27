@@ -36,6 +36,7 @@ body {
   --heros-background: #2e2f42;
   --heros-title: #ffffff;
   --heros-button: #ffffff;
+  --heros-button-background: #4d5ae5;
   --button-hover-and-focus: #404bbf;
   --sub-title: #2e2f42;
   --background-team: #f4f4fd;
@@ -45,7 +46,7 @@ body {
   --footer-logo-color: #f4f4fd;
   --footer-paragraph: #f4f4fd;
   --filter-button-text: #4d5ae5;
-  --filter-button-background: #4d5ae5;
+  --filter-button-background: #f4f4fd;
   --hover-and-focus-portfolio: #ffffff;
   --button-background-hover-and-focus: #404bbf;
 }
@@ -61,7 +62,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: var(--header-menu);
 }
 
@@ -74,6 +75,10 @@ body {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--text-contacts);
+}
+
+.header-contacts-link {
   color: var(--text-contacts);
 }
 
@@ -97,11 +102,13 @@ body {
 }
 
 .heros-button {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--heros-button);
+  background-color: var(--heros-button-background);
   cursor: pointer;
 }
 
@@ -136,6 +143,10 @@ body {
 }
 
 /* -- SECTION TEAM -- */
+.team {
+  background-color: var(--background-team);
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -143,7 +154,6 @@ body {
   text-transform: capitalize;
   color: var(--sub-title);
   text-align: center;
-  background-color: var(--background-team);
 }
 
 .team-sub-title {
@@ -155,7 +165,7 @@ body {
   text-align: center;
 }
 
-.team-list {
+.team-list-item {
   background-color: var(--background-team-cards);
 }
 
@@ -188,7 +198,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: var(--filter-button-text);
   background-color: var(--filter-button-background);
   cursor: pointer;
