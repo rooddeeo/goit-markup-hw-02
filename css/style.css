@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--basic-color);
-  background-color: var(--background-body);
+  color: var(--text);
+  background-color: var(--white-background);
 }
 
 .link {
@@ -21,40 +21,22 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--basic-color-logo);
+  color: var(--primary-drand);
 }
 
 :root {
-  --basic-color-logo: #4d5ae5;
-  --basic-color: #434455;
-  --background-body: #ffffff;
-  --header-logo-studio: #2e2f42;
-  --header-menu: #2e2f42;
-  --menu-hover-and-focus: #404bbf;
-  --text-contacts: #434455;
-  --contacts-hover-and-focus: #404bbf;
-  --heros-background: #2e2f42;
-  --heros-title: #ffffff;
-  --heros-button: #ffffff;
-  --heros-button-background: #4d5ae5;
-  --button-hover-and-focus: #404bbf;
-  --sub-title: #2e2f42;
-  --background-team: #f4f4fd;
-  --background-team-cards: #ffffff;
-  --paragraphs: #434455;
-  --footer-background: #2e2f42;
-  --footer-logo-color: #f4f4fd;
-  --footer-paragraph: #f4f4fd;
-  --filter-button-text: #4d5ae5;
-  --filter-button-background: #f4f4fd;
-  --hover-and-focus-portfolio: #ffffff;
-  --button-background-hover-and-focus: #404bbf;
+  --primary-drand: #4d5ae5;
+  --text: #434455;
+  --white-background: #ffffff;
+  --hero-background: #2e2f42;
+  --pressed-state: #404bbf;
+  --light: #f4f4fd;
 }
 
 /* -- INDEX STYLE PAGE -- */
 /* -- HEADER -- */
 .logo-color {
-  color: var(--header-logo-studio);
+  color: var(--hero-background);
 }
 
 .header-menu-link {
@@ -63,41 +45,41 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--header-menu);
+  color: var(--hero-background);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  color: var(--menu-hover-and-focus);
+  color: var(--pressed-state);
 }
 
 .header-contacts {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-contacts);
+  color: var(--text);
 }
 
 .header-contacts-link {
-  color: var(--text-contacts);
+  color: var(--text);
 }
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  color: var(--contacts-hover-and-focus);
+  color: var(--pressed-state);
 }
 
 /* -- MAIN -- */
 /* -- SECTION HERO`S -- */
 .heros {
-  background-color: var(--heros-background);
+  background-color: var(--hero-background);
 }
 
 .heros-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--heros-title);
+  color: var(--white-background);
   text-align: center;
 }
 
@@ -107,14 +89,15 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--heros-button);
-  background-color: var(--heros-button-background);
+  color: var(--white-background);
+  background-color: var(--primary-drand);
   cursor: pointer;
 }
 
 .heros-button:hover,
 .heros-button:focus {
-  color: var(--button-hover-and-focus);
+  background-color: var(--white-background);
+  color: var(--pressed-state);
 }
 
 /* -- SECTION DIGNYTY -- */
@@ -123,13 +106,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--sub-title);
+  color: var(--hero-background);
 }
 
 .dignity-item-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--paragraphs);
+  color: var(--text);
 }
 
 /* -- SECTION DOING -- */
@@ -138,13 +121,13 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--sub-title);
+  color: var(--hero-background);
   text-align: center;
 }
 
 /* -- SECTION TEAM -- */
 .team {
-  background-color: var(--background-team);
+  background-color: var(--light);
 }
 
 .team-title {
@@ -152,7 +135,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--sub-title);
+  color: var(--hero-background);
   text-align: center;
 }
 
@@ -161,32 +144,32 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--sub-title);
+  color: var(--hero-background);
   text-align: center;
 }
 
 .team-list-item {
-  background-color: var(--background-team-cards);
+  background-color: var(--white-background);
 }
 
 .team-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--paragraphs);
+  color: var(--text);
   text-align: center;
 }
 
 /* -- FOOTER -- */
 .footer {
-  background-color: var(--footer-background);
+  background-color: var(--hero-background);
 }
 
 .footer-logo-color {
-  color: var(--footer-logo-color);
+  color: var(--light);
 }
 
 .footer-paragraph {
-  color: var(--footer-paragraph);
+  color: var(--light);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -199,26 +182,26 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--filter-button-text);
-  background-color: var(--filter-button-background);
+  color: var(--primary-drand);
+  background-color: var(--light);
   cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--hover-and-focus-portfolio);
-  background-color: var(--button-background-hover-and-focus);
+  color: var(--white-background);
+  background-color: var(--pressed-state);
 }
 
 .result-sub-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--sub-title);
+  color: var(--hero-background);
 }
 
 .result-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--paragraphs);
+  color: var(--text);
 }
