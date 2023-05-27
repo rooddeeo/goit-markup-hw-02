@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -25,10 +25,11 @@ body {
 }
 
 :root {
-  --basic-color-logo: #2e2f42;
+  --basic-color-logo: #4d5ae5;
   --basic-color: #434455;
   --background-body: #ffffff;
-  --logo-color-web: #4d5ae5;
+  --header-logo-studio: #2e2f42;
+  --header-menu: #2e2f42;
   --menu-hover-and-focus: #404bbf;
   --text-contacts: #434455;
   --contacts-hover-and-focus: #404bbf;
@@ -37,11 +38,14 @@ body {
   --heros-button: #ffffff;
   --button-hover-and-focus: #404bbf;
   --sub-title: #2e2f42;
+  --background-team: #f4f4fd;
+  --background-team-cards: #ffffff;
   --paragraphs: #434455;
   --footer-background: #2e2f42;
   --footer-logo-color: #f4f4fd;
   --footer-paragraph: #f4f4fd;
   --filter-button-text: #4d5ae5;
+  --filter-button-background: #4d5ae5;
   --hover-and-focus-portfolio: #ffffff;
   --button-background-hover-and-focus: #404bbf;
 }
@@ -49,13 +53,16 @@ body {
 /* -- INDEX STYLE PAGE -- */
 /* -- HEADER -- */
 .logo-color {
-  color: var(--logo-color-web);
+  color: var(--header-logo-studio);
 }
 
 .header-menu-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  color: var(--header-menu);
 }
 
 .header-menu-link:hover,
@@ -63,7 +70,7 @@ body {
   color: var(--menu-hover-and-focus);
 }
 
-.header-contacts-link {
+.header-contacts {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -136,6 +143,7 @@ body {
   text-transform: capitalize;
   color: var(--sub-title);
   text-align: center;
+  background-color: var(--background-team);
 }
 
 .team-sub-title {
@@ -145,6 +153,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--sub-title);
   text-align: center;
+}
+
+.team-list {
+  background-color: var(--background-team-cards);
 }
 
 .team-paragraph {
@@ -159,22 +171,26 @@ body {
   background-color: var(--footer-background);
 }
 
-.footer-logo {
+.footer-logo-color {
   color: var(--footer-logo-color);
 }
 
 .footer-paragraph {
   color: var(--footer-paragraph);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* -- PORTFOLIO STYLE PAGE -- */
 /* -- MAIN -- */
 /* -- SECTION FILTER&RESULT -- */
 .filter-button {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--filter-button-text);
+  background-color: var(--filter-button-background);
   cursor: pointer;
 }
 
